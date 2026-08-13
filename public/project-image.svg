@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" role="img" aria-label="Imagen de proyecto placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="480" fill="url(#bg)"/>
+  <rect x="48" y="48" width="704" height="384" rx="16" fill="white" fill-opacity="0.06" stroke="white" stroke-opacity="0.15"/>
+  <rect x="88" y="96" width="320" height="24" rx="6" fill="white" fill-opacity="0.35"/>
+  <rect x="88" y="140" width="520" height="16" rx="4" fill="white" fill-opacity="0.2"/>
+  <rect x="88" y="168" width="460" height="16" rx="4" fill="white" fill-opacity="0.2"/>
+  <rect x="88" y="220" width="160" height="36" rx="18" fill="#6366f1"/>
+  <rect x="264" y="220" width="160" height="36" rx="18" fill="white" fill-opacity="0.15"/>
+  <text x="400" y="420" text-anchor="middle" fill="white" fill-opacity="0.55" font-family="system-ui, sans-serif" font-size="24">Captura de proyecto</text>
+</svg>

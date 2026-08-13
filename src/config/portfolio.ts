@@ -1,88 +1,19 @@
-export interface PortfolioConfig {
-  // Personal Information
-  personal: {
-    name: string;
-    title: string;
-    subtitle: string;
-    greeting: string;
-    profilePhoto: string;
-    cvUrl?: string;
-  };
-
-  // Contact Information
-  contact: {
-    email: string;
-    phone: string;
-    location: string;
-    social: {
-      github: string;
-      linkedin: string;
-      twitter?: string;
-      instagram?: string;
-    };
-  };
-
-  // About Section
-  about: {
-    description: string;
-    experience: string;
-    highlights: Array<{
-      icon: string;
-      title: string;
-      description: string;
-    }>;
-  };
-
-  // Projects
-  projects: Array<{
-    title: string;
-    description: string;
-    image: string;
-    technologies: string[];
-    github: string;
-    demo: string;
-  }>;
-
-  // Skills
-  skills: {
-    categories: Array<{
-      title: string;
-      skills: Array<{
-        name: string;
-        level: number;
-      }>;
-    }>;
-    technologies: string[];
-  };
-
-  // Footer
-  footer: {
-    copyright: string;
-    builtWith: string;
-  };
-
-  // Meta Information
-  meta: {
-    title: string;
-    description: string;
-    keywords: string[];
-  };
-}
+import { PortfolioConfig } from './portfolio.example';
 
 // Language-specific content
 const content = {
   en: {
     personal: {
-      name: "Joane Smith",
-      title: "Software Engineer",
-      subtitle: "Building elegant solutions with modern technologies",
+      name: "Henry Gutierrez",
+      title: "Full Stack Developer",
+      subtitle: "Building scalable web applications with modern technologies",
       greeting: "Hello, I'm",
-      profilePhoto: "/profile-photo.png",
-      cvUrl: "/path-to-cv.pdf"
+      profilePhoto: "/profile-photo.svg",
+      cvUrl: undefined
     },
     about: {
-      description: "I'm a passionate software engineer with over 5 years of experience building web applications and digital solutions. I specialize in React, TypeScript, and modern web technologies, with a focus on creating user-friendly, scalable, and maintainable applications.",
-      experience: "My journey in software development started with a curiosity about how things work behind the scenes. Today, I help businesses transform their ideas into digital reality, working with cross-functional teams to deliver high-quality software solutions.",
+      description: "Full Stack Developer with a passion for creating modern, scalable web applications. Experienced in frontend and backend development, I enjoy solving comple problems, learning new technologies, and building software that delivers real value to users.",
+      experience: "My journey as a self-taught developer has been driven by curiosity and continuous learning. I have built full-stack projects, strengthened my problem-solving skills, and enjoy creating clean, scalable web applications with modern technologies.",
       highlights: [
         {
           icon: "Code2",
@@ -108,29 +39,14 @@ const content = {
     },
     projects: [
       {
-        title: "E-Commerce Platform",
-        description: "A full-featured e-commerce platform built with React, TypeScript, and Stripe integration. Features include product catalog, shopping cart, payment processing, and admin dashboard.",
-        image: "/project-ecommerce.jpg",
-        technologies: ["React", "TypeScript", "Node.js", "Stripe", "MongoDB"],
-        github: "https://github.com/joanesmith/ecommerce",
-        demo: "https://ecommerce-demo.vercel.app"
-      },
-      {
-        title: "Project Management Dashboard",
-        description: "A comprehensive project management tool with task tracking, team collaboration, and real-time updates. Built with modern React patterns and state management.",
-        image: "/project-dashboard.jpg",
-        technologies: ["React", "Redux", "Chart.js", "Socket.io", "Express"],
-        github: "https://github.com/joanesmith/pm-dashboard",
-        demo: "https://pm-dashboard.vercel.app"
-      },
-      {
-        title: "Mobile Banking App",
-        description: "A secure mobile banking application with biometric authentication, transaction history, and financial insights. Optimized for performance and security.",
-        image: "/project-mobile.jpg",
-        technologies: ["React Native", "TypeScript", "Firebase", "Biometrics", "Chart.js"],
-        github: "https://github.com/joanesmith/mobile-banking",
-        demo: "https://banking-app-demo.vercel.app"
+        title: "Project Name",
+        description: "Describe your project here. What it does, what problems it solves, and what technologies you used.",
+        image: "/project-image.svg",
+        technologies: ["React", "TypeScript", "Node.js"],
+        github: "https://github.com/github.com/kb2872/project",
+        demo: "https://project-demo.vercel.app"
       }
+      // Add more projects as needed
     ],
     skills: {
       categories: [
@@ -171,23 +87,23 @@ const content = {
       ]
     },
     meta: {
-      title: "Joane Smith - Software Engineer",
-      description: "Personal portfolio of Joane Smith, a software engineer specializing in React, TypeScript, and modern web technologies.",
-      keywords: ["software engineer", "react", "typescript", "web development", "portfolio"]
+      title: "Henry Gutierrez - Full Stack Developer",
+      description: "Personal portfolio of Henry Gutierrez, a full stack developer specializing in modern web technologies.",
+      keywords: ["full stack developer", "web development", "portfolio", "react", "typescript"]
     }
   },
   es: {
     personal: {
-      name: "Joane Smith",
-      title: "Ingeniera de Software",
-      subtitle: "Construyendo soluciones elegantes con tecnologías modernas",
+      name: "Henry Gutierrez",
+      title: "Desarrollador Full Stack",
+      subtitle: "Desarrollando aplicaciones web escalables con tecnologias modernas.",
       greeting: "Hola, soy",
-      profilePhoto: "/profile-photo.png",
-      cvUrl: "/path-to-cv.pdf"
+      profilePhoto: "/profile-photo.svg",
+      cvUrl: undefined
     },
     about: {
-      description: "Soy una ingeniera de software apasionada con más de 5 años de experiencia construyendo aplicaciones web y soluciones digitales. Me especializo en React, TypeScript y tecnologías web modernas, con un enfoque en crear aplicaciones amigables, escalables y mantenibles.",
-      experience: "Mi viaje en el desarrollo de software comenzó con la curiosidad sobre cómo funcionan las cosas detrás de escena. Hoy, ayudo a las empresas a transformar sus ideas en realidad digital, trabajando con equipos multifuncionales para entregar soluciones de software de alta calidad.",
+      description: "Desarrollador Full Stack apasionado por crear aplicaciones web modernas y escalables. Disfruto transformar ideas en soluciones digitales utilizando tecnologias actuales, codigo limpio y buenas pràcticas de desarrollo.",
+      experience: "Mi camino como desarrollador autodidacta ha estado impulsado por la curiosidad y el aprendizaje continuo. He desarrollado proyectos full stack, fortaleciendo mis habilidades para resolver problemas y disfruto creando aplicaciones web limpias y escalables con tecnologias modernas.",
       highlights: [
         {
           icon: "Code2",
@@ -213,29 +129,14 @@ const content = {
     },
     projects: [
       {
-        title: "Plataforma de E-Commerce",
-        description: "Una plataforma de e-commerce completa construida con React, TypeScript e integración de Stripe. Incluye catálogo de productos, carrito de compras, procesamiento de pagos y panel de administración.",
-        image: "/project-ecommerce.jpg",
-        technologies: ["React", "TypeScript", "Node.js", "Stripe", "MongoDB"],
-        github: "https://github.com/joanesmith/ecommerce",
-        demo: "https://ecommerce-demo.vercel.app"
-      },
-      {
-        title: "Dashboard de Gestión de Proyectos",
-        description: "Una herramienta completa de gestión de proyectos con seguimiento de tareas, colaboración en equipo y actualizaciones en tiempo real. Construida con patrones modernos de React y gestión de estado.",
-        image: "/project-dashboard.jpg",
-        technologies: ["React", "Redux", "Chart.js", "Socket.io", "Express"],
-        github: "https://github.com/joanesmith/pm-dashboard",
-        demo: "https://pm-dashboard.vercel.app"
-      },
-      {
-        title: "Aplicación de Banca Móvil",
-        description: "Una aplicación de banca móvil segura con autenticación biométrica, historial de transacciones e insights financieros. Optimizada para rendimiento y seguridad.",
-        image: "/project-mobile.jpg",
-        technologies: ["React Native", "TypeScript", "Firebase", "Biometrics", "Chart.js"],
-        github: "https://github.com/joanesmith/mobile-banking",
-        demo: "https://banking-app-demo.vercel.app"
+        title: "Nombre del Proyecto",
+        description: "Describe tu proyecto aquí. Qué hace, qué problemas resuelve y qué tecnologías usaste.",
+        image: "/project-image.svg",
+        technologies: ["React", "TypeScript", "Node.js"],
+        github: "https://github.com/github.com/kb2872/project",
+        demo: "https://project-demo.vercel.app"
       }
+      // Agrega más proyectos según sea necesario
     ],
     skills: {
       categories: [
@@ -276,38 +177,38 @@ const content = {
       ]
     },
     meta: {
-      title: "Joane Smith - Ingeniera de Software",
-      description: "Portfolio personal de Joane Smith, una ingeniera de software especializada en React, TypeScript y tecnologías web modernas.",
-      keywords: ["ingeniera de software", "react", "typescript", "desarrollo web", "portfolio"]
+      title: "Henry Gutierrez - Desarrollador Full Stack",
+      description: "Portfolio personal de Henry Gutierrez, un desarrollador full stack especializado en tecnologías web modernas.",
+      keywords: ["desarrollador full stack", "desarrollo web", "portfolio", "react", "typescript"]
     }
   }
 };
 
 export const portfolioConfig: PortfolioConfig = {
   personal: {
-    name: "Joane Smith",
-    title: "Software Engineer",
-    subtitle: "Building elegant solutions with modern technologies",
+    name: "Henry Gutierrez",
+    title: "Full Stack Developer",
+    subtitle: "Building scalable web applications with modern technologies",
     greeting: "Hello, I'm",
-    profilePhoto: "/profile-photo.png",
-    cvUrl: "/path-to-cv.pdf"
+    profilePhoto: "/profile-photo.svg",
+    // cvUrl: "/cv.pdf" // Descomenta cuando subas tu CV a public/cv.pdf
   },
 
   contact: {
-    email: "joane.smith@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "San Francisco, CA",
+    email: "hengu83@gmail.com",
+    phone: "+39 3519651827",
+    location: "Cinisello Balsamo, Milano, Italia",
     social: {
-      github: "https://github.com/joanesmith",
-      linkedin: "https://linkedin.com/in/joanesmith",
-      twitter: "https://twitter.com/joanesmith",
-      instagram: "https://instagram.com/joanesmith"
+      github: "https://github.com/github.com/kb2872",
+      linkedin: "https://linkedin.com/in/www.linkedin.com/in/henrym-gutierrez",
+      twitter: "https://twitter.com/github.com/kb2872", // Optional - update if different
+      instagram: "https://instagram.com/github.com/kb2872" // Optional - update if different
     }
   },
 
   about: {
-    description: "I'm a passionate software engineer with over 5 years of experience building web applications and digital solutions. I specialize in React, TypeScript, and modern web technologies, with a focus on creating user-friendly, scalable, and maintainable applications.",
-    experience: "My journey in software development started with a curiosity about how things work behind the scenes. Today, I help businesses transform their ideas into digital reality, working with cross-functional teams to deliver high-quality software solutions.",
+    description: "Full Stack Developer with a passion for creating modern, scalable web applications. Experienced in frontend and backend development, I enjoy solving comple problems, learning new technologies, and building software that delivers real value to users.",
+    experience: "My journey as a self-taught developer has been driven by curiosity and continuous learning. I have built full-stack projects, strengthened my problem-solving skills, and enjoy creating clean, scalable web applications with modern technologies.",
     highlights: [
       {
         icon: "Code2",
@@ -334,29 +235,14 @@ export const portfolioConfig: PortfolioConfig = {
 
   projects: [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform built with React, TypeScript, and Stripe integration. Features include product catalog, shopping cart, payment processing, and admin dashboard.",
-      image: "/project-ecommerce.jpg",
-      technologies: ["React", "TypeScript", "Node.js", "Stripe", "MongoDB"],
-      github: "https://github.com/joanesmith/ecommerce",
-      demo: "https://ecommerce-demo.vercel.app"
-    },
-    {
-      title: "Project Management Dashboard",
-      description: "A comprehensive project management tool with task tracking, team collaboration, and real-time updates. Built with modern React patterns and state management.",
-      image: "/project-dashboard.jpg",
-      technologies: ["React", "Redux", "Chart.js", "Socket.io", "Express"],
-      github: "https://github.com/joanesmith/pm-dashboard",
-      demo: "https://pm-dashboard.vercel.app"
-    },
-    {
-      title: "Mobile Banking App",
-      description: "A secure mobile banking application with biometric authentication, transaction history, and financial insights. Optimized for performance and security.",
-      image: "/project-mobile.jpg",
-      technologies: ["React Native", "TypeScript", "Firebase", "Biometrics", "Chart.js"],
-      github: "https://github.com/joanesmith/mobile-banking",
-      demo: "https://banking-app-demo.vercel.app"
+      title: "Project Name",
+      description: "Describe your project here. What it does, what problems it solves, and what technologies you used.",
+      image: "/project-image.svg",
+      technologies: ["React", "TypeScript", "Node.js"],
+      github: "https://github.com/github.com/kb2872/project",
+      demo: "https://project-demo.vercel.app"
     }
+    // Add more projects as needed
   ],
 
   skills: {
@@ -404,11 +290,11 @@ export const portfolioConfig: PortfolioConfig = {
   },
 
   meta: {
-    title: "Joane Smith - Software Engineer",
-    description: "Personal portfolio of Joane Smith, a software engineer specializing in React, TypeScript, and modern web technologies.",
-    keywords: ["software engineer", "react", "typescript", "web development", "portfolio"]
+    title: "Henry Gutierrez - Full Stack Developer",
+    description: "Personal portfolio of Henry Gutierrez, a full stack developer specializing in modern web technologies.",
+    keywords: ["full stack developer", "web development", "portfolio", "react", "typescript"]
   }
 };
 
 // Export the content for use in components
-export { content }; 
+export { content };
