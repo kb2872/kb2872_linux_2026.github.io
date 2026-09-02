@@ -8,7 +8,7 @@ const content = {
       title: "Full Stack Developer",
       subtitle: "Building scalable web applications with modern technologies",
       greeting: "Hello, I'm",
-      profilePhoto: "/profile-photo.svg",
+      profilePhoto: "./src/image.png",
       cvUrl: undefined
     },
     about: {
@@ -98,7 +98,7 @@ const content = {
       title: "Desarrollador Full Stack",
       subtitle: "Desarrollando aplicaciones web escalables con tecnologias modernas.",
       greeting: "Hola, soy",
-      profilePhoto: "/profile-photo.svg",
+      profilePhoto: "/profile-photo.png",
       cvUrl: undefined
     },
     about: {
@@ -190,7 +190,7 @@ export const portfolioConfig: PortfolioConfig = {
     title: "Full Stack Developer",
     subtitle: "Building scalable web applications with modern technologies",
     greeting: "Hello, I'm",
-    profilePhoto: "/profile-photo.svg",
+    profilePhoto: "/profile-photo.png",
     // cvUrl: "/cv.pdf" // Descomenta cuando subas tu CV a public/cv.pdf
   },
 
